@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pubberLogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="26dp"
+        android:text="PUBBER"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pubPic2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pubPic2"
+        android:layout_width="306dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/border"
+        android:cropToPadding="true"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pubberLogo3"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+    <ImageButton
+        android:id="@+id/showMap2"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:contentDescription="show on map"
+        android:onClick="showMap"
+        android:scaleType="centerInside"
+        android:state_focused="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poolTableMI"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/map_button" />
+
+    <ImageButton
+        android:id="@+id/moreInfo2"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:contentDescription="more info"
+        android:onClick="showMoreInfo"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poolTableCMI"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/more_button" />
+
+    <TextView
+        android:id="@+id/pubName2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:text="Pub Name Not Found"
+        android:textAlignment="center"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pubPic2" />
+
+
+
+    <TextView
+        android:id="@+id/timeToBeAtPub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="206dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pubName2" />
+
+    <ImageButton
+        android:id="@+id/visited"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="43dp"
+        android:background="@null"
+        android:onClick="visited"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/moreInfo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tickbox_button" />
+
+    <TextView
+        android:id="@+id/visitedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        android:text="VISITED?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/showMap2"
+        app:layout_constraintEnd_toStartOf="@+id/visited" />
+
+</android.support.constraint.ConstraintLayout>

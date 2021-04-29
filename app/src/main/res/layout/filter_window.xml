@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="331dp"
+    android:layout_height="450dp"
+    android:background="#f5f5f5"
+    android:theme="@style/AppTheme">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="35dp"
+        android:text="FILTERS"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dogFriendly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dogFriendly"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Dog Friendly"
+            android:textAlignment="viewStart"
+            android:textColor="#212121"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/dogFriendlyCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:buttonTint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/servesFood"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogFriendly">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Serves Food"
+            android:textAlignment="viewStart"
+            android:textColor="#212121"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/servesFoodCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:buttonTint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/realAle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/servesFood">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Real Ale"
+            android:textAlignment="viewStart"
+            android:textColor="#212121"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/realAleCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:buttonTint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/danceFloor"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/realAle">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Dance Floor"
+            android:textAlignment="viewStart"
+            android:textColor="#212121"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/danceFloorCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:buttonTint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liveMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/danceFloor">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Live Music"
+            android:textAlignment="viewStart"
+            android:textColor="#212121"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/liveMusicCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:buttonTint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/poolTable"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="31dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/okButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liveMusic">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pool Table"
+            android:textAlignment="viewStart"
+            android:textColor="#212121"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/poolTableCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:buttonTint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okButton"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="16dp"
+        android:text="OK"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
