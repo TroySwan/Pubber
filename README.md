@@ -8,7 +8,7 @@ The user can plan a pub tour with times they would like to be at each location.
 <img src="https://user-images.githubusercontent.com/58415190/116613358-7d430280-a930-11eb-8628-d449623447ca.png" width="300" height="600">
 Pubs are sorted by the time the user wants to go to them. The user can also see the location on a map.
 
-```
+```java
 public class TimeComparator implements Comparator {
     @Override
     public int compare(Object p1, Object p2) {
